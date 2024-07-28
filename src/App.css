@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container-fluid{
+    width: 100% !important;
+    background-color: rgb(4 47 46);
+    overflow: hidden;
+    
+}
+
+.imgPokemon{
+    width: 15rem !important;
+    height: 13rem !important;
+}
+
+.btn{
+    color: white !important;
+    background-color:  rgb(34 197 94) !important;
+    padding-inline: 4rem !important;
+    border-radius: 1rem !important;
+}
+.cards{
+     box-shadow: rgba(105, 104, 104, 0.35) 0px 5px 15px !important;
+     transition: all .2s ease-in-out !important;
+
+}
+.cards:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+    transform: scale(1.1) !important;
+
+}
+
+.box1{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 0.9rem;
+    flex-wrap: wrap;
+
+    p{
+        font-weight: bold;
+        span{
+            font-weight: 100;
+        }
+    }
+}
+
+input{
+    width: 40%;
+    font-size: 2em !important;
+    border-radius: 0.5rem;
+    border-width: none !important;
+    outline-width: none !important;
+
+}
+
+input::placeholder{
+    color: rgb(179, 177, 177);
+}
+
+@media screen and (max-width: 540px) {
+    input{
+        width: 70%;
+        font-size: 1.6em !important;
+        padding: 0.1rem !important;
+        
+        
+    
+    }
+    input::placeholder{
+        color: rgb(179, 177, 177);
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .container-fluid{
+        width: 100% !important;
+        
+    }
+    .col{
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    
+}
